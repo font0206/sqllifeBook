@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookActivity">
+    <Button
+        android:id="@+id/btn_ExitBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_gravity="right"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_idBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter id book"/>
+<!--        <EditText-->
+<!--            android:id="@+id/et_name"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="enter name"/>-->
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_tile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter title"
+
+        />
+    <EditText
+        android:id="@+id/et_idAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter id author"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_selectBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            />
+        <Button
+            android:id="@+id/btn_saveBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            />
+        <Button
+            android:id="@+id/btn_delBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            />
+        <Button
+            android:id="@+id/btn_updateBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/id_gridViewBook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+
+        />
+</LinearLayout>
